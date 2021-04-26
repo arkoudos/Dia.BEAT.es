@@ -21,7 +21,7 @@ if($username != false && $password != false){
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="./css/home2.css">
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    
 </head>
 <?php include 'navbar.php'; ?>
 <body>
@@ -39,15 +39,15 @@ if($username != false && $password != false){
     <img src="images/home_menu_bg.png"  width="1100" height="890">
 
     <div class="center">
-        <button class="ripple" style="margin:5px;">Υπολογισμός Ινσουλίνης</button> 
-        <button class="ripple" style="margin:5px;">Φαγητά                </button>
-        <button class="ripple" style="margin:5px;">Εισφορά               </button>
+        <a href="calculate.php" class="homebutton">Υπολογισμός Ινσουλίνης</a>
+        <a href="food.php" class="homebutton">Φαγητά</a> 
+        <a href="#" class="homebutton">Εισφορά</a>
     </div>
       
     <div class="center2">
-        <button class="ripple" style="margin:5px;">Ιστορικό Γευμάτων</button>
-        <button class="ripple" style="margin:5px;">Ιστορικό Μετρήσεων</button>
-        <button class="ripple" style="margin:5px;">Εξαγωγη Αποτελεσμάτων</button>
+        <a href="#" class="homebutton">Ιστορικό Γευμάτων</a> 
+        <a href="#" class="homebutton">Ιστορικό Μετρήσεων</a>
+        <a href="#" class="homebutton">Εξαγωγή Αποτελεσμάτων</a>
     </div>
 
     <div class="center3">
@@ -56,7 +56,7 @@ if($username != false && $password != false){
     </div>
 
     <div class="center4">
-        <button1 class="ripple" style="margin:5px;">Υποστήριξη</button> 
+    <a href="#" class="homebutton">Υποστήριξη</a>
     </div>
 </div>
 <!-- MENU END -->
@@ -78,3 +78,8 @@ if($username != false && $password != false){
 </footer>
 
 </html>
+
+
+
+
+

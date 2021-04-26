@@ -74,6 +74,9 @@
             <input class="user-input" type="text" name="name" placeholder="Name" required value="<?php echo $name ?>">
             <input class="user-input" type="text" name="surname" placeholder="Surname" required value="<?php echo $surname ?>">
             <input class="user-input" type="email" name="email" placeholder="Email Address" required value="<?php echo $email ?>">
+
+            
+                
             <input class="btn" type="submit" name="signup" value="SIGN UP">
             <div class="options-02">
                 <p>Already Registered? <a href="#">Sign In</a></p>
