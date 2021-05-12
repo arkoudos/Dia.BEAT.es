@@ -7,7 +7,10 @@ if($username != false && $password != false){
 }else{
     header('Location:index.php');
 }
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +22,16 @@ if($username != false && $password != false){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/calculatestyle.css">
+    
 </head>
 <?php include 'navbar.php'; ?>
-<body>
+
+
+<body style="background-color: lightblue;">
     
-<h1>COMING SOON</h1>
+
 
 
 
@@ -36,36 +41,41 @@ if($username != false && $password != false){
     
         <div   class="container2" style= "margin-top:10px">
 
+                    <form action="calculateinfo.php" method="post">
+                        <div data-ng-app=""  data-ng-init="quantity=100">
+                        <h2><b>Προσθήκη Μέτρησης</b></h2>
+                        <input type="number"  name="sugar" text-align=center autocomplete="off" ng-model="quantity">
+                        <p>
+                            <br>
+                            <br>
                             
-                 
-          
-                </form>
+                            
+                         <b>Μονάδες Ινσουλίνης</b>
+                         <br>
+                         <a>{{(quantity -100)/50}}</a>
+                       
+
+                         <br>
+                          <br>
+                          
+                          <button a href="#" class="myButton">Αποθήκευση</a></button>
+                        </p>
+
+                    </form>
         </div>
 
+    
+
+        <div   class="container3" style= "margin-top:10px">
+            <h2><b>Προτεινόμενα Φαγητά</b></h2>
+            <br>
+
+                   
+        </div>
+         
+    
+ 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

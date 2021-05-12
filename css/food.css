@@ -1,0 +1,60 @@
+.container { 
+  height: 550px;
+  position: relative;
+  border: 4px solid rgb(21, 3, 78); 
+  margin-top: 20px;
+  background-color: rgb(248, 246, 246);
+ margin-bottom:10px;
+ transform: translate(0%, 0%);
+}
+
+
+
+.foodtable,td,#title1,#title2 {
+  border: 2px solid black;
+
+}
+
+#title1,#title2{
+  text-align: center;
+}
+
+.foodtable {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 75%;
+  border-collapse: collapse;
+  background-color: rgb(186, 182, 182);
+  text-align: center;
+  
+ text-align: left;
+}
+ 
+.caption{
+  text-align: left;
+  caption-side: bottom;
+  color: black;
+}
+
+
+table{
+  margin-top: 10px;
+  border-collapse: collapse;
+  width:100%;
+  color:rgb(0, 0, 0);
+  font-family:'Arial Narrow Bold';
+  font-size: 18px;
+  text-align: left;
+  background-color:gainsboro;
+  padding: 10px;
+  border: 2px solid black;
+
+}
+
+th{
+  background-color: rgb(165, 161, 161);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  border: 2px solid black;
+
+}
