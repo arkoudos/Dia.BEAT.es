@@ -1,6 +1,20 @@
 <?php require_once "controllerUserData.php"; ?>
 <?php include "navbar.php"; ?>
 
+<?php 
+session_start();
+$username = $_SESSION['username'];
+$password = $_SESSION['password'];
+$type=$_SESSION['type'];
+if($username != false && $password != false){
+   
+}else{
+  header('Location:index.php');
+    
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

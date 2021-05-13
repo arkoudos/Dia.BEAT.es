@@ -21,30 +21,13 @@ if($username != false && $password != false){
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
-  
+    <link rel="stylesheet" type="text/css" href="./css/home2.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
-<?php include 'navbar.php'; ?>
+<?php include 'doctor_navbar.php'; ?>
 <body style="background-color: lightblue;">
     
-<h1>COMING SOON</h1>
-
-
-
-
-<div   class="container" style= "margin-top:50px">
-
-    
-        <div   class="container2" style= "margin-top:10px">
-
-                            
-        
-        </div>
-
-</div>
-
-
-
+<h1>COMING SOON!!!!!!!!</h1>
 
 
 

@@ -21,27 +21,82 @@ if($username != false && $password != false){
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
-  
+    <link rel="stylesheet" type="text/css" href="./css/contactstyle.css">
 </head>
-<?php include 'navbar.php'; ?>
+<?php include 'doctor_navbar.php'; ?>
 <body style="background-color: lightblue;">
     
-<h1>COMING SOON</h1>
-
-
-
 
 <div   class="container" style= "margin-top:50px">
 
-    
-        <div   class="container2" style= "margin-top:10px">
+<div   class="container3" style= "margin-top:50px">
 
-                            
         
-        </div>
+ <?php
+    $conn = mysqli_connect("localhost","root","","diabeates");
+    if($conn-> connect_error){
+     die("Connection failed:". $conn-> connect_error);
+      }
+
+   $sql="SELECT user,message from contactdata";
+   $result =$conn-> query($sql);
+
+   if ($result-> num_rows >0){
+   while ($row = $result-> fetch_assoc()){
+    echo "</td><td><b><i>" .$row["user"]. "</td><td></b></i>";
+    echo "\n";
+    echo "</td><td>:". $row["message"]. "</td><td>";
+    echo "<br>";
+    }
+
+    echo "</table>";
+  }
+   else{
+    echo "No Result";
+   }
+
+
+
+   if ($result-> num_rows > 12){   
+    mysqli_query($con,'TRUNCATE TABLE contactdata');
+    }
+
+   $conn-> close();
+ ?>
+  
+
+ 
 
 </div>
+
+
+<div   class="container2" style= "margin-top:10px">
+        
+        <form action="contactinfo_doctor.php" method="post">
+         <div class="form-group">
+             <label><b>Μήνυμα:</b></label>
+             <input type="text" name="message" autocomplete="off" class="form-control" required></input>
+          </div>
+
+            <button type="submit" class="btn btn-success">Υποβολή</button>
+             
+       </form>  
+       
+        </div>
+
+      
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

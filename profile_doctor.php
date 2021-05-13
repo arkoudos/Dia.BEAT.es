@@ -24,7 +24,7 @@ if($username != false && $password != false){
     <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
   
 </head>
-<?php include 'navbar.php'; ?>
+<?php include 'doctor_navbar.php'; ?>
 <body style="background-color: lightblue;">
     
 <h1>COMING SOON</h1>

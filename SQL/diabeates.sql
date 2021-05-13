@@ -148,17 +148,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
---
--- Table structure for table `events`
---
-DROP TABLE IF EXISTS 'events';
-CREATE TABLE 'events'
-(
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'title' varchar(255) NOT NULL,
-  'start_event' datetime NOT NULL,
-  'end_event' datetime NOT NULL, 
-   PRIMARY KEY('id')
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;

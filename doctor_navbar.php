@@ -16,13 +16,13 @@
 
       <ul>
         
-  <a href="home.php"><img src="images/diabeates_logo.png"  height="58"></a>
+  <a href="home_doctor.php"><img src="images/diabeates_logo.png"  height="58"></a>
 <li class="logo"></li>
 
-<li class="items"><a href="home.php">Home</a></li>
-<li class="items"><a href="profile.php">Profile</a></li>
-<li class="items"><a href="news.php">News</a></li>
-<li class="items"><a href="contact.php">Contact</a></li>
+<li class="items"><a href="home_doctor.php">Home</a></li>
+<li class="items"><a href="profile_doctor.php">Profile</a></li>
+<li class="items"><a href="news_doctor.php">News</a></li>
+<li class="items"><a href="contact_doctor.php">Contact</a></li>
 <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
 <li class="items"><a href="logout.php"><i class="btn btn-outline-success my-2 my-sm-0"> Logout</i></a></li>
 </ul>

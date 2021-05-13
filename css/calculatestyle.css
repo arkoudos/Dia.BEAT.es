@@ -42,13 +42,13 @@
 
   .container3 { 
     height: 300px;
-   text-align: center;
+    text-align: center;
     position: relative;
     border: 4px solid rgb(24, 15, 52); 
     width: 350px;
     background-color: rgba(150, 144, 144, 0.83);
     bottom: 88%;
-    left:105%;
+    left:110%;
   }
 
 

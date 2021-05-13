@@ -1,5 +1,6 @@
 <?php require_once "controllerUserData.php"; ?>
 <?php 
+session_start();
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 if($username != false && $password != false){
@@ -24,7 +25,7 @@ if($username != false && $password != false){
     <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 <?php include 'navbar.php'; ?>
-<body>
+<body style="background-color: lightblue;">
     
 <h1>COMING SOON!!!!!!!!</h1>
 

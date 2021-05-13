@@ -1,12 +1,13 @@
-<?php require_once "controllerUserData.php"; ?>
 <?php 
 session_start();
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
+$type=$_SESSION['type'];
 if($username != false && $password != false){
    
 }else{
-    header('Location:index.php');
+  header('Location:index.php');
+    
 }
 ?>
 
@@ -21,30 +22,39 @@ if($username != false && $password != false){
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
-  
+    <link rel="stylesheet" type="text/css" href="./css/home2.css">
+    
 </head>
-<?php include 'navbar.php'; ?>
+<?php include 'doctor_navbar.php'; ?>
 <body style="background-color: lightblue;">
     
-<h1>COMING SOON</h1>
 
 
-
-
-<div   class="container" style= "margin-top:50px">
-
+    <!-- MENU START -->
+    <div   class="container" style="margin-bottom:50px;margin-top:50px">
+    <style>
+    img {
+        opacity: 0.5;
+        }
+    </style>
     
-        <div   class="container2" style= "margin-top:10px">
+    <img src="images/doctor.jpg"  width="1100" height="890">
 
-                            
-        
+    <div class="center">
+            <a href="#" class="homebutton">Εισφορά</a>
+    </div>
+      
+    <div class="center2">
+        <a href="#" class="homebutton">Υποστήριξη</a>
+    </div>
+
+    <div class="center3">
+        <div   class="container2" style= "margin-top:20px">
         </div>
+    </div>
 
 </div>
-
-
-
+<!-- MENU END -->
 
 
 

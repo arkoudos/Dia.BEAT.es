@@ -1,11 +1,13 @@
-<?php require_once "controllerUserData.php"; ?>
 <?php 
+session_start();
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
+$type=$_SESSION['type'];
 if($username != false && $password != false){
    
 }else{
-    header('Location:index.php');
+  header('Location:index.php');
+    
 }
 ?>
 
@@ -24,7 +26,7 @@ if($username != false && $password != false){
     
 </head>
 <?php include 'navbar.php'; ?>
-<body>
+<body style="background-color: lightblue;">
     
 
 
@@ -45,7 +47,7 @@ if($username != false && $password != false){
     </div>
       
     <div class="center2">
-        <a href="#" class="homebutton">Ιστορικό Γευμάτων</a> 
+        <a href="foodHistory.php" class="homebutton">Ιστορικό Γευμάτων</a> 
         <a href="#" class="homebutton">Ιστορικό Μετρήσεων</a>
         <a href="#" class="homebutton">Εξαγωγή Αποτελεσμάτων</a>
     </div>
