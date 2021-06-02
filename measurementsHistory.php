@@ -126,7 +126,6 @@ if($username != false && $password != false){
 
 
 <body style="background-color: lightblue;">
-
 <h2 style="text-align: center;">Καλώς ήρθατε στην σελίδα Ιστορικό Μετρήσεων</h2>
 <p style="text-align: center;">Στην σελίδα ιστορίκο μετρήσεων μπορείτε να τοποθετήσετε τις καθημερινές μετρήσεις σας, ώστε να  
  διαθέτετε μια γενική εικόνα της υγείας σας.<br>

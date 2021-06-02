@@ -166,7 +166,7 @@ CREATE TABLE `user` (
   `number` int(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `speciality` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `user`
@@ -246,3 +246,15 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+DROP TABLE measurement ;
+CREATE TABLE measurement (
+   id int(11) NOT NULL AUTO_INCREMENT,
+   diabetic VARCHAR(35) NOT NULL,
+   measurement FLOAT(5,2) NOT NULL,
+   start_event datetime NOT NULL,
+   end_event   datetime NOT NULL,
+   PRIMARY KEY (id,diabetic),
+   FOREIGN KEY (diabetic) REFERENCES user(username)
+   ON DELETE CASCADE ON UPDATE CASCADE
+) engine=InnoDB;
