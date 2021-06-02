@@ -1,4 +1,3 @@
-<?php require_once "controllerUserData.php"; ?>
 <?php include "navbar.php"; ?>
 
 <?php 
@@ -68,8 +67,8 @@ if($username != false && $password != false){
               editable:true,
               eventResize:function(event)
               {
-                  var start = $.fullCalendar.formatDate(event.start,"YY-MM-DD HH:mm:ss");
-                  var end= $.fullCalendar.formatDate(event.end,"YY-MM-DD HH:mm:ss");
+                  var start = $.fullCalendar.formatDate(event.start,"Y-MM-DD HH:mm:ss");
+                  var end= $.fullCalendar.formatDate(event.end,"Y-MM-DD HH:mm:ss");
                   var title = event.title;
                   var id = event.id;
                   $.ajax({
@@ -85,14 +84,14 @@ if($username != false && $password != false){
               },
               eventDrop:function(event)
               {
-                  var start = $.fullCalendar.formatDate(event.start,"YY-MM-DD HH:mm:ss");
-                  var end = $.fullCalendar.formatDate(event.end,"YY-MM-DD HH:mm:ss");
+                  var start = $.fullCalendar.formatDate(event.start,"Y-MM-DD HH:mm:ss");
+                  var end = $.fullCalendar.formatDate(event.end,"Y-MM-DD HH:mm:ss");
                   var title = event.title;
                   var id = event.id;
                   $.ajax({
                       url:"update.php",
                       type:"POST",
-                      date:{title:title, start:start, end:end, id:id},
+                      data:{title:title, start:start, end:end, id:id},
                       success:function()
                       {
                           calendar.fullCalendar('refetchEvents');

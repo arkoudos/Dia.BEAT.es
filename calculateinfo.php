@@ -46,13 +46,19 @@ if (($sugar >= 380)) {
 
 
 
- if (($sugar < 100)){
+ if (($sugar < $num1)){
     $ypog= $num1 - $sugar;
+
+
+
     }
 
 
 
 $query = " insert into sugardata (sugar,ans,user,ypog) values ('$sugar','$ans','$user','$ypog') ";
+
+
+
 
 
 mysqli_query($con,$query);

@@ -65,8 +65,11 @@ if($username != false && $password != false){
                          while ($row = $result-> fetch_assoc()){
                          echo " <b><font color=blue size='5.5pt'>  $row[ans] </font></b>";
                          }
-                     
                     }
+
+
+
+
                 ?>
 
             </form>
@@ -76,6 +79,20 @@ if($username != false && $password != false){
             <div class="container3" style= "margin-top:5px">
             <h2><b>Προτεινόμενα Φαγητά</b></h2>
             <br>
+            <?php
+                 $sql="SELECT food.food FROM food,sugardata WHERE food.ydat<=sugardata.ypog and sugardata.id=(SELECT max(id) FROM sugardata where user='".$username."')";
+                 $result =$conn-> query($sql);
+
+                 
+                if ($result-> num_rows >0){
+                     while ($row = $result-> fetch_assoc()){
+                     echo " <b><font color=blue size='1pt'>  $row[food] </font></b><br>";
+                     }
+                }
+            ?>
+
+
+           
            
                
         </div>

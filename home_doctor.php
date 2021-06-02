@@ -41,7 +41,7 @@ if($username != false && $password != false){
     <img src="images/doctor.jpg"  width="1100" height="890">
 
     <div class="center">
-            <a href="#" class="homebutton">Εισφορά</a>
+            <a href="donate_doctor.php" class="homebutton">Εισφορά</a>
     </div>
       
     <div class="center2">
@@ -50,6 +50,18 @@ if($username != false && $password != false){
 
     <div class="center3">
         <div   class="container2" style= "margin-top:20px">
+
+        <?php
+            if(isset($_SESSION['STATUS']))
+                    {
+                    echo "<h4>" .$_SESSION['STATUS']. "</h4>";
+                    unset($_SESSION['STATUS']);
+
+
+                    }
+            ?>
+
+
         </div>
     </div>
 

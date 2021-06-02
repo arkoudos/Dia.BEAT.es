@@ -34,19 +34,22 @@
 
 
  .container2 { 
-    height: 350px;
-    position: relative;
+    height: 200px;
+    
     border: 4px solid rgb(24, 15, 52); 
-    width: 850px;
+    width: 500px;
     background-color: rgba(150, 144, 144, 0.83);
     opacity: 80%;
+    text-align:center;
+   
+    padding:2%;
   }
 
 
   .center3 {
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

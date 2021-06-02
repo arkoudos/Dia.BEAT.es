@@ -35,10 +35,7 @@
                         <label for="doctor"><b style="color:#B58C0B; font-size:23.5px;">Γιατρός</b></label><br><br>
                         </div>
             <input class="btn" type="submit" name="signup" value="SIGN UP">
-            <br>
-            <p style="color:#0FE9F2; font-size:16px;">Registered? <a href="index.php"><b style="color:#6B5BE9; font-size:18px;">  Login Here </b></a> </p>
             </form>
-            
             </div>
         </div>
     </div>

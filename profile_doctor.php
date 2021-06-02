@@ -21,31 +21,84 @@ if($username != false && $password != false){
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/profilestyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/profilestyle_doctor.css">
   
 </head>
 <?php include 'doctor_navbar.php'; ?>
 <body style="background-color: lightblue;">
     
-<h1>COMING SOON</h1>
+
 
 
 
 
 <div   class="container" style= "margin-top:50px">
 
+            <?php
+            if(isset($_SESSION['STATUS']))
+                    {
+                    echo "<h4>" .$_SESSION['STATUS']. "</h4>";
+                    unset($_SESSION['STATUS']);
+
+
+                    }
+            ?>
     
         <div   class="container2" style= "margin-top:10px">
+            
+        <form action="profile_update_doctor.php" method="POST">
+      
+                <?php
+                $db = mysqli_connect("localhost","root","","diabeates");
 
-                            
-        
-        </div>
+                $query = "SELECT name,surname,email,age,number,address,speciality  FROM user where username='".$username."'";
+                $rows = mysqli_query($db, $query);
+
+                while($row = mysqli_fetch_assoc($rows))
+                {
+                
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Όνομα:  </b></a>";
+                echo $row["name"];
+                echo"<br>";
+                
+
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Επίθετο:  </b></a>";
+                echo $row["surname"];
+                echo"<br>";
+
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Email:  </b></a>";
+                echo $row["email"];
+                echo"<br>";
+                echo"<br>";
+
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Ηλικία:  </b></a>";
+                echo $row["age"];
+                echo"<br>";
+
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Τηλέφωνο:  </b></a>";
+                echo $row["number"];
+                echo"<br>";
+
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Διεύθυνση:  </b></a>";
+                echo $row["address"];
+                echo"<br>";
+
+                echo"<br>";
+                echo "<a href='#'style='color:blue; font-size: 13pt'><b>  Ειδικότητα:  </b></a>";
+                echo $row["speciality"];
+                echo"<br>";
+
+                }
+                ?>
+
+                <div   class="container3" style= "margin-top:10px">
+                <button a href="profile_update_doctor.php" name="change" class="myButton">Αλλαγή</a></button>
+                        
+                </div>
+                </form>
 
 </div>
-
-
-
-
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

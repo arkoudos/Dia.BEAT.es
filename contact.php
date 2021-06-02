@@ -45,7 +45,7 @@ if($username != false && $password != false){
    while ($row = $result-> fetch_assoc()){
     echo "</td><td><b><i>" .$row["user"]. "</td><td></b></i>";
     echo "\n";
-    echo "</td><td>=" . $row["message"]. "</td><td>";
+    echo "</td><td>:" . $row["message"]. "</td><td>";
     echo "<br>";
     }
   
