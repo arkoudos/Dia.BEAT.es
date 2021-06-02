@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
    
-   <title>Responsive Navigation Bar</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
     <link rel="stylesheet" href="css/navbar.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
